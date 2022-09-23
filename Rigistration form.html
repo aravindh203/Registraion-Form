@@ -1,0 +1,164 @@
+<html>
+<head>
+	<title>FORM</title>
+	<style>
+		form{
+			padding:0px 490px 0px 475px;
+			}
+		.name{
+			background-color:red;
+			color:white;
+			border-radius:5px;
+			}
+		input{
+			float:right;
+			}
+		.DOB{
+			width:177px;
+			hight:20pxpx;
+			}
+		.gender{
+			float:none;
+		    }
+		#language{
+			float:none;
+			}
+		.button1{
+			float:none;
+			color:white;
+			background-color:green;
+			border-radius:5px;
+			width:70px;
+			height:30px;
+		   }
+		.button2{
+			float:none;
+			color:white;
+			background-color:red;
+			border-radius:5px;
+			width:70px;
+			height:30px;
+		   }
+		select{
+			width:177px;
+			}
+		#mark{
+			width:177px;
+			}
+		#mobile2{
+			width:50px;
+			}
+		#mobile1{
+			width:135px;
+			}
+		body{
+			background-color:#d8dfd3;
+			}
+		#name1{
+			width:120px;
+			}
+		#name2{
+			width:100px;
+			}
+	</style>
+</head>
+<body style="font-size:20px">
+	<center>
+		<h1><mark><u>REGISTRATION FORM</u></mark></h1>
+	</center>
+	<form>
+		<fieldset style="border:2px solid">
+			<legend style="text-align:center">Form</legend><br>
+			<div>
+				<label for="name1">Your Name</label>
+				<input type="text" name="name1" id="name1" placeholder="Surname">
+				<input type="text" name="name1" id="name2" placeholder="First Name">
+			</div><br><br>
+			<div>
+				<label for="name2">Father's Name</label>
+				<input type="text" name="name2" id="name3" placeholder="IN BLOCK LETTERS">
+			</div><br><br>	
+			<div>
+				<label for="name3">Mother's Nmae</label>
+				<input type="text" name="name3" id="name4" placeholder="IN BLOCK LETTERS">
+			</div><br><br>
+			<div>
+				<label for="mail">Email</label>
+				<input type="email" name="mail" id="mail" placeholder="abc@gmail.com">
+			</div><br><br>
+            <div>			
+				<label for="mobile">Mobile No</label>
+				<input placeholder="Phone Number" type="number" name="mobile" id="mobile1">
+				<input placeholder="area" type="number" name="mobile" id="mobile2">
+			</div><br><br>
+            <div>			
+				<label for="gender">Gender<b>:</b></label>
+				<input class="gender" type="radio" name="gender" id="gender">
+				<label for="gender">male</label>
+				<input class="gender" type="radio" id="gender" name="gender">
+				<label for="gender">female</label>
+				<input class="gender" type="radio" id="gender" name="gender">
+				<label for="gender">others</label>
+			</div><br><br>
+			<div>	
+				<label for="pass">password</label>
+				<input type="password" name="pass" id="pass">
+			</div><br><br>
+			<div>
+				<label for="nation">Qualification</label>
+				<select style="float:right" name="select" >
+					<optgroup label="BSC">
+						<option value="">select Degree</option>
+						<option value="Bsc.Mathematics">Bsc.Mathematics</option>
+						<option value="Bsc.Computer Science">Bsc.Computer Science</option>
+						<option value="Bsc.Chemistry">Bsc.Chemistry</option>
+						<option value="Bsc.Physics">Bsc.Physics</option>
+						<option value="Bsc.IT">Bsc.IT</option>
+					</optgroup>
+					<optgroup label="BA">                                            
+						<option value="BA.Tamil">BA.Tamil</option>
+						<option value="BA.English">BA.English</option>
+					</optgroup>
+				</select>
+			</div><br><br>
+			<div>
+            	<label for="DOB">DOB</label>
+				<input class="DOB" type="date" name="DOB" id="DOB">
+			</div><br><br>
+			<div>
+				<label for="pin">Postal Code</label>
+				<input type="tel" pattern="[0-9]{3}-[0-9]{3}" name="pin" id="pin" placeholder="123-456">
+			</div><br><br>
+			<div>				
+				<label for="add">Address</label>
+				<input type="text" id="add" name="add">
+			</div><br><br>
+			<div>
+				<label for="place">Place</label>
+				<input type="text" name="place" id="place" placeholder="city/district">
+			</div><br><br>
+			<div>			
+				<label for="lng">Language Known<b>:</b></label>
+				<input  id="language" type="checkbox" name="lng" id="lng">
+				<label for="lng">Tamil</label>
+				<input id="language" type="checkbox" name="lng" id="lng">
+				<label for="quln">English</label>
+			</div><br><br>
+			<div>			
+				<label for="mark">Percentage<b>:</b></label>
+				<input type="range" name="mark" min="25" max="50" id="mark">
+			</div><br><br>
+			<div>
+				<label for="file">Resume</label><br>
+				<input style="float:none" type="file" id="file" name="file">
+			</div><br>
+			<div>
+				<center>
+					<input class="button2" type="reset">
+					<input class="button1" type="submit">
+				</center>
+			</div>	
+		</fieldset>
+	</form>
+</body>
+</html>
